@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+        <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+	<meta name="author" content="Pierre Lecocq" />
+	<meta http-equiv="last-modified" content="{{ site.time }}" />
+        <link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" />
+        <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+        <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+    </head>
+    <body>
+
+        <header class="row">
+            <div class="wrap">
+                <h1><a href="{{ site.baseurl }}/">Qsdfgh<span>.com</span></a></h1>
+
+                <ul class="nav">
+                    <li><a href="{{ site.baseurl }}/" class="home" title="Home">Home</a></li>
+                    {% for page in site.pages %}
+                    {% if page.title %}
+                    <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+
+                <ul class="contact">
+                    <li><a target="_blank" href="https://twitter.com/pierre404" class="twitter" title="Twitter: @pierre404">twitter</a></li>
+                    <li><a target="_blank" href="https://github.com/pierre-lecocq" class="github" title="Github: pierre-lecocq">github</a></li>
+                    <li><a target="_blank" href="http://fr.linkedin.com/in/pierrelecocqlinkedin" class="linkedin" title="Linkedin profile">linkedin</a></li>
+                    <li><a target="_blank" href="mailto:pierre.lecocq@gmail.com?subject=Contact+from+Qsdfgh.com" class="email" title="Send me an email">email</a></li>
+                </ul>
+            </div>
+        </header>

@@ -1,0 +1,127 @@
+/**
+ * Reset
+ */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;} article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;} body{line-height:1;} ol,ul{list-style:none;} blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;} table{border-collapse:collapse;	border-spacing:0;}
+
+/**
+ * Main style
+ */
+body { font-size: 100%; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; line-height: 150%; }
+
+a { color: #4354D3; outline: none; }
+a:hover { color: #666666; }
+
+.wrap { width: 960px; margin: 0 auto; }
+.row:after { content: ""; display: table; clear: both; }
+.fontified, h1, h2, h3, h4 { font-family: 'Oswald', sans-serif; }
+
+header { box-shadow: 0px 2px 5px #cccccc; padding: 20px 0; position: fixed; width: 100%; top: 0; background-color: rgba(255,255,255,0.9); }
+header a { color: #000000; text-decoration: none; text-transform: uppercase; }
+header a span { color: #959595; }
+header h1 { float: left; font-size: 180%; line-height: 32px; }
+header h1 a:hover { color: #000000; }
+
+header ul.nav { float: left; margin-left: 30px; line-height: 32px; }
+header ul.nav li { display: inline-block; margin-left: 15px; }
+
+header ul.contact { float: right; }
+header ul.contact li { display: inline-block; margin-left: 15px; }
+header ul.contact li a { display: block; width: 32px; height: 32px; text-indent: -9999px; background-image: url(../assets/sprite-contact.png); background-position: 0 0; background-repeat: no-repeat; }
+header ul.contact li a.twitter { }
+header ul.contact li a.github { background-position: 0 -32px; }
+header ul.contact li a.linkedin { background-position: 0 -64px; }
+header ul.contact li a.email { background-position: 0 -96px; }
+
+section { margin: 150px 0 50px 0; }
+section ul { list-style-type: disc; margin: 0 0 0 18px; }
+section ul li { margin: 18px 0; }
+section p { margin: 20px 0; }
+section .home ul { list-style-type: none; margin: 0; }
+section .home ul li { color: #999999; }
+section .home ul.articles li { margin: 30px 0; }
+section .home ul.articles li a  { font-size: 130%; }
+section .home ul li p { margin: 0; font-size: 100%; }
+section .home ul li p span {  color: #333333; display: inline-block; margin-right: 10px; }
+section .home ul li p a { color: #777777; }
+
+section h1 { font-size: 150%; color: #000000; margin: 40px 0 20px 0; }
+section h1::before { content: '\2022\2003'; color: #dddddd;}
+section h2 { font-size: 130%; color: #333333; margin: 40px 0 20px 0; }
+section h2::before { content: '\2022\2003\2022\2003'; color: #dddddd;}
+section h3 { font-size: 120%; color: #555555; margin: 40px 0 20px 0; }
+section h3::before { content: '\2022\2003\2022\2003\2022\2003'; color: #dddddd;}
+section h4 { font-size: 110%; color: #666666; margin: 40px 0 20px 0; }
+section h4::before { content: '\2022\2003\2022\2003\2022\2003\2022\2003'; color: #dddddd;}
+
+section .post-top { text-align: center; background: #f5f5f5; padding: 5px 0; }
+section .post-top h1 { font-size: 200%; }
+section .post-top h1::before { content: ''; }
+section .post-top p.post-meta { text-align: center; color: #999999; }
+section .post-top p.post-meta a { color: #777777; }
+
+footer .wrap { border-top: 5px solid #e5e5e5; padding: 20px 0 50px 0; color: #959595; }
+
+/**
+ * Syntax highlighting styles
+ */
+
+.highlight { background: #EAEEF3; padding: 10px; font-size: 80%; font-family: "Lucida Console", Monaco, monospace; }
+.highlight .c     { color: #998; font-style: italic }
+.highlight .err   { color: #a61717; background-color: #e3d2d2 }
+.highlight .k     { font-weight: bold }
+.highlight .o     { font-weight: bold }
+.highlight .cm    { color: #998; font-style: italic }
+.highlight .cp    { color: #999; font-weight: bold }
+.highlight .c1    { color: #998; font-style: italic }
+.highlight .cs    { color: #999; font-weight: bold; font-style: italic }
+.highlight .gd    { color: #000; background-color: #fdd }
+.highlight .gd .x { color: #000; background-color: #faa }
+.highlight .ge    { font-style: italic }
+.highlight .gr    { color: #a00 }
+.highlight .gh    { color: #999 }
+.highlight .gi    { color: #000; background-color: #dfd }
+.highlight .gi .x { color: #000; background-color: #afa }
+.highlight .go    { color: #888 }
+.highlight .gp    { color: #555 }
+.highlight .gs    { font-weight: bold }
+.highlight .gu    { color: #aaa }
+.highlight .gt    { color: #a00 }
+.highlight .kc    { font-weight: bold }
+.highlight .kd    { font-weight: bold }
+.highlight .kp    { font-weight: bold }
+.highlight .kr    { font-weight: bold }
+.highlight .kt    { color: #458; font-weight: bold }
+.highlight .m     { color: #099 }
+.highlight .s     { color: #d14 }
+.highlight .na    { color: #008080 }
+.highlight .nb    { color: #0086B3 }
+.highlight .nc    { color: #458; font-weight: bold }
+.highlight .no    { color: #008080 }
+.highlight .ni    { color: #800080 }
+.highlight .ne    { color: #900; font-weight: bold }
+.highlight .nf    { color: #900; font-weight: bold }
+.highlight .nn    { color: #555 }
+.highlight .nt    { color: #000080 }
+.highlight .nv    { color: #008080 }
+.highlight .ow    { font-weight: bold }
+.highlight .w     { color: #bbb }
+.highlight .mf    { color: #099 }
+.highlight .mh    { color: #099 }
+.highlight .mi    { color: #099 }
+.highlight .mo    { color: #099 }
+.highlight .sb    { color: #d14 }
+.highlight .sc    { color: #d14 }
+.highlight .sd    { color: #d14 }
+.highlight .s2    { color: #d14 }
+.highlight .se    { color: #d14 }
+.highlight .sh    { color: #d14 }
+.highlight .si    { color: #d14 }
+.highlight .sx    { color: #d14 }
+.highlight .sr    { color: #009926 }
+.highlight .s1    { color: #d14 }
+.highlight .ss    { color: #990073 }
+.highlight .bp    { color: #999 }
+.highlight .vc    { color: #008080 }
+.highlight .vg    { color: #008080 }
+.highlight .vi    { color: #008080 }
+.highlight .il    { color: #099 }
