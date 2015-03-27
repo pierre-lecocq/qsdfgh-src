@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
         <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
-	<meta name="author" content="Pierre Lecocq" />
-	<meta http-equiv="last-modified" content="{{ site.time }}" />
+    <meta name="author" content="Pierre Lecocq" />
+    <meta http-equiv="last-modified" content="{{ site.time }}" />
         <link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" />
         <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
@@ -27,6 +27,11 @@
                     {% endif %}
                     {% endfor %}
                 </ul>
+                <select>
+                    <option>Menu</option>
+                    <option value="{{ site.baseurl }}/">Home</option>
+                    {% for page in site.pages %}{% if page.title %}<option value="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</option>{% endif %}{% endfor %}
+                </select>
 
                 <ul class="contact">
                     <li><a target="_blank" href="https://twitter.com/pierre404" class="twitter" title="Twitter: @pierre404">twitter</a></li>
@@ -34,5 +39,12 @@
                     <li><a target="_blank" href="http://fr.linkedin.com/in/pierrelecocqlinkedin" class="linkedin" title="Linkedin profile">linkedin</a></li>
                     <li><a target="_blank" href="mailto:pierre.lecocq@gmail.com?subject=Contact+from+Qsdfgh.com" class="email" title="Send me an email">email</a></li>
                 </ul>
+                <select>
+                    <option>Contact</option>
+                    <option value="https://twitter.com/pierre404">Twitter</option>
+                    <option value="https://github.com/pierre-lecocq">Github</option>
+                    <option value="http://fr.linkedin.com/in/pierrelecocqlinkedin">Linkedin</option>
+                    <option value="mailto:pierre.lecocq@gmail.com?subject=Contact+from+Qsdfgh.com">Email</option>
+                </select>
             </div>
         </header>

@@ -5,5 +5,18 @@
     </div>
 </footer>
 
+<script type="text/javascript">
+ var selects = document.getElementsByTagName('header')[0].getElementsByTagName('select');
+ if (selects.length > 0) {
+     for (x = 0; x < selects.length; x++) {
+         selects[x].addEventListener('change', function () {
+             if (this.selectedIndex > 0) {
+                 window.location = this.value;
+                 return false;
+             }
+         });
+     }
+ }
+</script>
   </body>
 </html>
