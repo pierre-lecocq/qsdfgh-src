@@ -91,7 +91,7 @@ You can leave this snippet in your Emacs configuration file since it is only act
 
 # The result
 
-Here is what is displayed in your minibuffer:
+Here is what is displayed in your `*Messages*` buffer:
 
 ```
 Feature ’extra-feature’ loaded in 0.08s
