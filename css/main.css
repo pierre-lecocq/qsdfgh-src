@@ -65,6 +65,9 @@ section .post-top h1::before { content: ''; }
 section .post-top p.post-meta { text-align: center; color: #999999; }
 section .post-top p.post-meta a { color: #777777; }
 
+section code { background: #EAEEF3; padding: 3px 6px; font-size: 80%; }
+section em { font-style: italic; }
+
 footer .wrap { border-top: 5px solid #e5e5e5; padding: 1.250em 0 3.125em 0; color: #959595; }
 
 /**
