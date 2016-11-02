@@ -27,9 +27,6 @@ header a span { color: #959595; }
 header h1 { float: left; font-size: 180%; }
 header h1 a:hover { color: #000000; }
 
-header ul.nav { float: left; margin-left: 1.875em; line-height: 2em; }
-header ul.nav li { display: inline-block; margin-left: 0.938em; }
-
 header ul.contact { float: right; }
 header ul.contact li { display: inline-block; margin-left: 0.938em; }
 header ul.contact li a { display: block; width: 32px; height: 32px; text-indent: -9999px; background-image: url(../assets/sprite-contact.png); background-position: 0 0; background-repeat: no-repeat; }
