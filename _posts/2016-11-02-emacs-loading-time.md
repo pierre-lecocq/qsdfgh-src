@@ -54,7 +54,7 @@ _Tip: do not name your files with a digit at the first position. It won't be loa
 
 Here is the trick: we will activate some benchmarking using the `--debug-init` command line argument.
 
-We will detect the usage of this argument tanks to the Emacs internal variable [`init-file-debug`](http://git.savannah.gnu.org/cgit/emacs.git/tree/lisp/startup.el#n1007) and then use the [`benchmark`](http://git.savannah.gnu.org/cgit/emacs.git/tree/lisp/emacs-lisp/benchmark.el) internal library.
+We will detect the usage of this argument thanks to the Emacs internal variable [`init-file-debug`](http://git.savannah.gnu.org/cgit/emacs.git/tree/lisp/startup.el#n1007) and then use the [`benchmark`](http://git.savannah.gnu.org/cgit/emacs.git/tree/lisp/emacs-lisp/benchmark.el) internal library.
 
 To handle that, here is what your `init.el` must look like:
 
