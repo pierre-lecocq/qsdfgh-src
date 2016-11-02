@@ -36,7 +36,6 @@ header ul.contact li a { display: block; width: 32px; height: 32px; text-indent:
 header ul.contact li a.twitter { }
 header ul.contact li a.github { background-position: 0 -32px; }
 header ul.contact li a.linkedin { background-position: 0 -64px; }
-header ul.contact li a.email { background-position: 0 -96px; }
 
 section { margin: 9.375em 0 3.125em 0; }
 section ul { list-style-type: disc; margin: 0 0 0 1.125em; }
