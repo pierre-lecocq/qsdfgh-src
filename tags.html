@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="home">
+    <ul class="tags">
+        {% for tag in site.tags %}
+        {% assign t = tag | first %}
+        {% assign posts = tag | last %}
+        <li>
+            <h1 id="{{ t }}">{{ t }} ({{ posts | size }} posts)</h1>
+            <ul class="articles">
+                {% for post in posts %}
+                <li>
+                    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    <p>
+	                    {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+                    </p>
+                </li>
+                {% endfor %}
+            </ul>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

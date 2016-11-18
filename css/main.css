@@ -46,6 +46,8 @@ section .home ul li p { margin: 0; font-size: 100%; }
 section .home ul li p span { color: #333333; display: inline-block; margin-right: 0.625em; }
 section .home ul li p a { color: #777777; }
 
+section .error { font-size: 40px; letter-spacing: 3px; text-align: center; margin: 100px 0; }
+
 section h1 { font-size: 150%; color: #000000; margin: 2.5em 0 1.250em 0; }
 section h1::before { content: '\2022\2003'; color: #dddddd;}
 section h2 { font-size: 130%; color: #333333; margin: 2.5em 0 1.250em 0; }
